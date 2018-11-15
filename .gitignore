@@ -1,0 +1,5 @@
+__pycache___/*
+*.swp
+*.pyc
+surface.py
+test_surface.py
