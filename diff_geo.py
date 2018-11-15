@@ -35,18 +35,18 @@ scene.range = 1.3*L
 xyz = Create_Axis(color.yellow, opacity=0.8)
 xyz.draw_axis_planes(plane = 'xy', plane_size=5, plane_width=0.01, opacity=0.3)
 
-circle = get_cirlce(0.3, vector(1.001,2.001,0), 25)
+circle = get_cirlce(0.2, vector(1.001,2.001,0), 25)
 print(circle)
 time.sleep(2)
 
 
-c = FilledCircle(center=vector(1,2,0), radius=0.3)
+c = FilledCircle(center=vector(1,2,0), radius=0.2)
 c = c.get_circle_obj()
 circle.visible = False
 
 time.sleep(2)
 
-ball=sphere(pos=vec(1,2,3), size=vec(0.6,0.6,0.6))
+ball=sphere(pos=vec(1,2,3), size=vec(0.4,0.4,0.4))
 ball.shininess = 0; ball.color = vector(0.513, 0.756, 0.403)
 
 rise_above(c,5.9,0.05)
@@ -55,15 +55,15 @@ time.sleep(1)
 
 r = ring(pos=vector(-1,2,5),
         axis=vector(0,0,1),
-        radius=2, thickness=1)
+        radius=2, thickness=1.2)
 r.shininess = 0; r.color = color.cyan#vector(1, 0.945, 0.7137)
 
 # while ball.pos.z != 7.6:
 # rate(30)
-rise_above(ball, 5.9, 0.05)
+rise_above(ball, 6.3, 0.05)
 time.sleep(2)
 c.color = vector(0.5450,0.2705, 0.76)
-rise_above(c,5.9,0.05)
+rise_above(c,6.3,0.05)
 time.sleep(1)
 
 ball.visible = False
